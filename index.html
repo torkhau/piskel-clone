@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Piskel-Clone</title>
+</head>
+
+<body class="_box-shadow">
+    <header class="header _box-shadow">
+        <div class="spinner" style="display: none">
+            <ul class="menu">
+                <li><a class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true" href=#></a>
+                    <ul class="submenu">
+                        <li><a class="fa fa-arrows-alt fa-2x" aria-hidden="true" href=#><span> Resize</span></a>
+                            <ul class="subsubmenu">
+                                <li><a href=#><span> 32x32</span></a></li>
+                                <li><a href=#><span> 64x64</span></a></li>
+                                <li><a href=#><span> 128x128</span></a></li>
+                            </ul>
+                        </li>
+                        <li><a id="save" class="fa fa-floppy-o fa-2x" aria-hidden="true" href=#><span> Save</span> </a>
+                        </li>
+                        <li><a class="fa fa-arrow-circle-down fa-2x" aria-hidden="true" href=#><span> Export</span></a>
+                        </li>
+                        <li><a class="fa fa-arrow-circle-up fa-2x" aria-hidden="true" href=#><span> Import</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="name">New Piskel</div>
+    </header>
+
+    <main>
+        <div class="start">
+            <p><img class="flag" width="860" height="400"></p>
+            <p><img class="gif" width="118" height="118"></p>
+            <div class="container">
+                <p class="pen"><i class="fa fa-pencil fa-spin fa-5x" aria-hidden="true"></i></p>
+                <p class="brush"><i class="fa fa-paint-brush fa-spin fa-5x" aria-hidden="true"></i> </p>
+                <p class="scissors"><i class="fa fa-scissors fa-spin fa-5x" aria-hidden="true"></i> </p>
+            </div>
+            <button class="go"><span>Let's go!</span></button>
+            <div class="me"><a href="https://www.linkedin.com/in/torkhau/" target="_blank">©Aliaksandr Torkhau</a></div>
+        </div>
+        <div class="next" style="display: none">
+            <div class="tools">
+                <table class="point">
+                    <tr>
+                        <td class="nano"><i class="fa fa-square" aria-hidden="true"></i> </i></td>
+                        <td class="mini"><i class="fa fa-square " aria-hidden="true"></i></td>
+                        <td class="midi"><i class="fa fa-square " aria-hidden="true"></i></td>
+                        <td class="maxi"><i class="fa fa-square " aria-hidden="true"></i></td>
+                    </tr>
+                </table>
+                <table class="tool _box-shadow _border">
+                    <tr>
+                        <td data-tool="1"><i class="fa fa-pencil fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="2"><i class="fa fa-share-alt fa-rotate-270 fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="3"><i class="fa fa-paint-brush fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="4"><i class="fa fa-tint fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="5"><i class="fa fa-eraser fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="6"><i class="fa fa fa-bars fa-rotate-90 fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="7"><i class="fa fa-square fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="8"><i class="fa fa-circle fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="9"><i class="fa fa-hand-paper-o fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="10"><i class="fa fa-magic fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="11"><i class="fa fa-square-o fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="12"><i class="fa fa-lastfm fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="13"><i class="fa fa-moon-o fa-2x" aria-hidden="true"></i></td>
+                        <td data-tool="14"><i class="fa fa-delicious fa-2x" aria-hidden="true"></i></td>
+                    </tr>
+                    <tr>
+                        <td data-tool="15"><i class="fa fa-eyedropper fa-2x" aria-hidden="true"></i></td>
+                        <td><a class="fa fa-info fa-2x" aria-hidden="true" href="#openModal"></a>
+                            <div id="openModal" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Закрыть" class="close">X</a>
+                                    <h2>Info</i></h2>
+                                    <br>
+                                    <h3>Keyboard shortcuts</h3>
+                                    <br>
+                                    <p><i class="fa fa-pencil fa-lg"></i> - pen tool (P) </p>
+                                    <p><i class="fa fa-share-alt fa-rotate-270 fa-lg"></i> - vertical mirror pen (V)</p>
+                                    <p><i class="fa fa-paint-brush fa-lg"></i> - paint bucket tool</p>
+                                    <p><i class="fa fa-tint fa-lg"></i> - paint all pixels of the same color</p>
+                                    <p><i class="fa fa-eraser fa-lg"></i> - eraser tool (E)</p>
+                                    <p><i class="fa fa fa-bars fa-rotate-90 fa-lg"></i> - stroke tool</p>
+                                    <p><i class="fa fa-square fa-lg"></i> - rectangle tool</p>
+                                    <p><i class="fa fa-circle fa-lg"></i> - cercle tool</p>
+                                    <p><i class="fa fa-hand-paper-o fa-lg"></i> - move tool</p>
+                                    <p><i class="fa fa-magic fa-lg"></i> - shape selection</p>
+                                    <p><i class="fa fa-square-o fa-lg"></i> - rectangle selection</p>
+                                    <p><i class="fa fa-lastfm fa-lg"></i> - lasso selection</p>
+                                    <p><i class="fa fa-moon-o fa-lg"></i> - lighten</p>
+                                    <p><i class="fa fa-delicious fa-lg"></i> - dithering tool (D)</p>
+                                    <p><i class="fa fa-eyedropper fa-lg"></i> - color picker (O)</p>
+                                    <p><i class="fa fa-info fa-lg"></i> - info (I)</p>
+                                    <br>
+                                    <h3>About the author</h3>
+                                    <br>
+                                    <a class="author" href="https://github.com/torkhau" target="_blank">Aliaksandr
+                                        Torkhau
+                                    </a>
+                                    <br>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div id="color_select">
+                    <input type="color" value="#FFFFFF" class="color_box2 _box-shadow _border"></input>
+                    <input type="color" value="#000000" class="color_box1 _box-shadow _border"></input>
+                    <div class="arrow"> <i class="fa fa-refresh fa-spin fa-lg " aria-hidden="true"></i></div>
+                </div>
+            </div>
+            <div class="frames_box _box-shadow _border">
+                <ul class="list_of_frames">
+                    <li>
+                        <button class="addBtn _box-shadow _border">Add new</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="boder_canvas _box-shadow _border">
+                <div class="canvas _box-shadow">
+                    <canvas id="result" height="768" width="768"></canvas>
+                </div>
+            </div>
+            <div class="data_about_canvas _box-shadow _border">
+                <div>
+                    <canvas class="canvas_prew _box-shadow _border" height="256" width="256"></canvas>
+                    <div>
+                        <output id="out_fps" for="fps">1 FPS</output>
+                        <br>
+                        <input type="range" id="fps" min="1" max="24" step="1" value="1">
+                    </div>
+                </div>
+                <div>
+                    <span>Current tool: </span><span class="info_current-tool">Pen tool</span>
+                    <br>
+                    <span class="info_size">[32x32]</span>&ensp;<span class="info_coordinates"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.go').onclick = () => {
+            document.querySelector('.start').style.display = 'none';
+            document.querySelector('.next').style.display = 'grid';
+            document.querySelector('.spinner').style.display = 'block';
+        }
+    </script>
+    <script src="app.bundle.js"></script>
+</body>
+
+</html>
